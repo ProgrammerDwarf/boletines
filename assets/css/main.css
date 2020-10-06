@@ -1,0 +1,183 @@
+/* ------ PALETA DE COLORES -------*/ 
+
+/* Color Theme Swatches in Hex
+.Henkel-—-Corporate-website-1-hex { color: #F22E3E; }
+.Henkel-—-Corporate-website-2-hex { color: #F22E52; }
+.Henkel-—-Corporate-website-3-hex { color: #732D3A; }
+.Henkel-—-Corporate-website-4-hex { color: #F20505; }
+.Henkel-—-Corporate-website-5-hex { color: #F2F2F2; } */
+
+/* Degradado*/
+
+/* background: #ED213A;  fallback for old browsers */
+
+/* background: -webkit-linear-gradient(to right, #93291E, #ED213A);  Chrome 10-25, Safari 5.1-6 */
+
+/* background: linear-gradient(to right, #93291E, #ED213A); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+html, html *, *::before,*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #ED213A;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+a:focus {
+  color:#a81c2d;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+p,td, span,div,section,article, ul,li {
+  font-family: 'Roboto', sans-serif;
+}
+
+td {
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #97291F;
+}
+th {
+  display: none;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  background: #ED213A;  /*fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+  background: linear-gradient(to right, #93291E, #ED213A);
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 960px;
+  height: 80vh;
+  width: 100%;
+  height: 100%; 
+  background-color: #fff;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  position: relative;
+  padding: 1em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.actions { /*pertenece a la pagina de la panaderia */
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close { /*pertenece a la pagina de la panaderia */
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #EC213A;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td, .table th {
+  padding: 1em;
+  text-align: left;
+
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2d2f7;
+}
+
+.fa-star {
+  color:#ffc400;
+}
+
+.title-item {
+  border-bottom: solid 2px #9C2821;
+  width: 100%;
+  padding-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+ text-transform: uppercase;
+ font-size: 2em;
+}
+
+.position {
+  background-color: #9C2821;
+  color: white;
+  padding: 0.35em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.address {
+  font-weight: bold;
+  color: #DD2235;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+.main-image {
+  height: 250px;
+  float: left;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+@media (min-width: 900px) {
+  th, td {
+    display: table-cell;
+    width: auto
+  }
+  
+  td:nth-of-type(1) {
+    font-size: 1em;
+    }
+
+    .content {
+      padding: 1.8em;
+
+    }
+  }
+
+@media (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}
